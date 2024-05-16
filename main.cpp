@@ -3,13 +3,13 @@
 #include <stdlib.h>
 #include "array.h"
 void menu() {
-    printf("1- Intput Values\n");
+    printf("1- input Values\n");
     printf("2- Print Array\n");
     printf("3- Find Maximum Value\n");
-    printf("4- Find Minium Value\n");
+    printf("4- Find minimum Value\n");
     printf("5- Calculate Average\n");
-    printf("6- Enter to fail\n");
-    printf("7- Read  fail\n");
+    printf("6- Enter to file\n");
+    printf("7- Read  file\n");
     printf("8- Stop Program\n");
 }
 
@@ -42,7 +42,7 @@ int main() {
                 printf("Average valute = %f\n", avg);
             case 6 :
                 fileenter(array);
-                puts("Zapisano tablice");
+                puts("Table saved");
                 break;
             case 7 :
                 readFile(array);
