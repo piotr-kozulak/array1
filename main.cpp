@@ -21,7 +21,7 @@ int main() {
     float avg;
     while(option!=8) {
         menu();
-        printf("choice = ");
+        printf("\n");
         scanf("%d", &option);
         switch(option){
             case 1 :enterValue(array);
