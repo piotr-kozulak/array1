@@ -3,13 +3,13 @@
 using namespace std;
 #include "array.h"
 void menu() {
-    cout << "1- Intput Values" << endl;
+    cout << "1- input Values" << endl;
     cout << "2- Print Array" << endl;
-    cout << "3- Find Maximum Value" << endl;
-    cout << "4- Find Minium Value" << endl;
+    cout << "3- Find maximum Value" << endl;
+    cout << "4- Find minimum Value" << endl;
     cout << "5- Calculate Average" << endl;
-    cout << "6- Enter to fail" << endl;
-    cout << "7- Read  fail"<< endl;
+    cout << "6- Enter to file" << endl;
+    cout << "7- Read  file"<< endl;
     cout << "8- Stop Program" << endl;
 }
 
