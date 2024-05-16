@@ -1,16 +1,16 @@
 #define SIZE 10
-#include <stdio.h>
-#include <stdlib.h>
+#include <iostream>
+using namespace std;
 #include "array.h"
 void menu() {
-    printf("1- input Values\n");
-    printf("2- Print Array\n");
-    printf("3- Find Maximum Value\n");
-    printf("4- Find minimum Value\n");
-    printf("5- Calculate Average\n");
-    printf("6- Enter to file\n");
-    printf("7- Read  file\n");
-    printf("8- Stop Program\n");
+    cout << "1- Intput Values" << endl;
+    cout << "2- Print Array" << endl;
+    cout << "3- Find Maximum Value" << endl;
+    cout << "4- Find Minium Value" << endl;
+    cout << "5- Calculate Average" << endl;
+    cout << "6- Enter to fail" << endl;
+    cout << "7- Read  fail"<< endl;
+    cout << "8- Stop Program" << endl;
 }
 
 int main() {
@@ -21,8 +21,8 @@ int main() {
     float avg;
     while(option!=8) {
         menu();
-        printf("\n");
-        scanf("%d", &option);
+        cout<<""<<endl;
+        cin>>option;
         switch(option){
             case 1 :enterValue(array);
                 break;
@@ -31,18 +31,18 @@ int main() {
                 break;
             case 3 :
                 max = findMaximumValue(array);
-                printf("maxmium value = %d\n",max);
+                cout << "maximum value = " << max << endl;
                 break;
             case 4 :
                 min = findMiniumValue(array);
-                printf("minium value = %d\n",min);
+                cout << "minimum value = " << min << endl;
                 break;
             case 5:
                 avg= calculateAverage(array);
-                printf("Average valute = %f\n", avg);
+                cout << "Average value = " << avg << endl;
             case 6 :
                 fileenter(array);
-                puts("Table saved");
+                cout<<"saved table"<< endl;
                 break;
             case 7 :
                 readFile(array);
